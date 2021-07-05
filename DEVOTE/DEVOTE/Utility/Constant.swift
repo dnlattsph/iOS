@@ -1,0 +1,27 @@
+//
+//  Constant.swift
+//  DEVOTE
+//
+//  Created by D Naung Latt on 02/07/2021.
+//
+
+import SwiftUI
+
+// MARK - FORMATTER
+
+let itemFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .short
+    formatter.timeStyle = .medium
+    return formatter
+}()
+
+// MARK - UI
+
+var backgroundGradient: LinearGradient {
+    return LinearGradient(gradient: Gradient(colors: [Color.pink, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
+}
+
+// MARK - UX
+
+let feedback = UINotificationFeedbackGenerator()
